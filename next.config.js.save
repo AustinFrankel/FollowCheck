@@ -1,0 +1,16 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
+}
+
+module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // App router is now the default, no need for experimental.appDir
+}
+
+module.exports = nextConfig 
