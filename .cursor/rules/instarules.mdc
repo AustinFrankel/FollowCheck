@@ -1,5 +1,23 @@
 ---
-description:
-globs:
-alwaysApply: false
+rules:
+  - description: "Apply to all page entry points"
+    globs:
+      - "app/page.jsx"
+      - "app/**/*.page.jsx"
+      - "app/**/*.page.tsx"
+    alwaysApply: false
+
+  - description: "Apply to all API route handlers"
+    globs:
+      - "app/api/**/route.js"
+      - "app/api/**/route.ts"
+    alwaysApply: false
+
+  - description: "Apply to reusable components and utilities"
+    globs:
+      - "app/components/**/*.jsx"
+      - "app/components/**/*.tsx"
+      - "utils/**/*.js"
+      - "utils/**/*.ts"
+    alwaysApply: false
 ---

@@ -53,4 +53,4 @@ async function testInstagramAPI() {
 }
 
 // Run the test
-testInstagramAPI().catch(console.error); 
+testInstagramAPI().catch(console.error);
