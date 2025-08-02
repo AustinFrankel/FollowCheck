@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Button from './components/Button'
 import Navigation from './components/Navigation'
 import StatsCard from './components/StatsCard'
+import { fetchInstagramProfile } from './utils/instagramClient'
 
 export default function MainComponent() {
   const [username, setUsername] = useState('')
@@ -45,20 +46,13 @@ export default function MainComponent() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
 
-      const response = await fetch('/api/analyze-instagram-simple', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username: usernameToAnalyze }),
-        signal: controller.signal
-      })
+      // Use client-side Instagram fetcher
+      const data = await fetchInstagramProfile(usernameToAnalyze)
 
       clearTimeout(timeoutId)
-      const data = await response.json()
 
-      if (!response.ok) {
-        setError(data.error || 'Analysis failed. Please check the username and try again.')
+      if (!data) {
+        setError('Unable to fetch Instagram data. The profile may be private or the username may be incorrect.')
         return
       }
 
