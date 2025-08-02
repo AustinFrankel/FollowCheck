@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[601],{6802:function(e,r,t){Promise.resolve().then(t.bind(t,3707))},3707:function(e,r,t){"use strict";t.r(r),t.d(r,{default:function(){return Error}});var n=t(7437),o=t(2265);function Error(e){let{error:r,reset:t}=e;return(0,o.useEffect)(()=>{console.error(r)},[r]),(0,n.jsx)("div",{className:"min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900",children:(0,n.jsxs)("div",{className:"text-center",children:[(0,n.jsx)("h2",{className:"text-2xl font-bold mb-4 text-white",children:"Something went wrong!"}),(0,n.jsx)("p",{className:"text-gray-300 mb-6",children:(null==r?void 0:r.message)||"An unexpected error occurred"}),(0,n.jsx)("button",{onClick:t,className:"px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200",children:"Try again"})]})})}},622:function(e,r,t){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var n=t(2265),o=Symbol.for("react.element"),s=(Symbol.for("react.fragment"),Object.prototype.hasOwnProperty),i=n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,c={key:!0,ref:!0,__self:!0,__source:!0};function q(e,r,t){var n,l={},u=null,a=null;for(n in void 0!==t&&(u=""+t),void 0!==r.key&&(u=""+r.key),void 0!==r.ref&&(a=r.ref),r)s.call(r,n)&&!c.hasOwnProperty(n)&&(l[n]=r[n]);if(e&&e.defaultProps)for(n in r=e.defaultProps)void 0===l[n]&&(l[n]=r[n]);return{$$typeof:o,type:e,key:u,ref:a,props:l,_owner:i.current}}r.jsx=q,r.jsxs=q},7437:function(e,r,t){"use strict";e.exports=t(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=6802)}),_N_E=e.O()}]);
