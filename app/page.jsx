@@ -45,7 +45,7 @@ export default function MainComponent() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
 
-      const response = await fetch('/api/analyze-instagram', {
+      const response = await fetch('/api/analyze-instagram-simple', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
